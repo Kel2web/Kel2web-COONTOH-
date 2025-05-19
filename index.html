@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelompok 2</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    }
+
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #1c1c1c;
+      color: white;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      flex: 1;
+      text-align: center;
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    main {
+      padding: 30px 20px;
+    }
+
+    .description {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      text-align: justify;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      text-align: center;
+      color: #333;
+    }
+
+    .scroll-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    .card {
+      flex: 0 0 250px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      scroll-snap-align: start;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 16px rgb(255, 255, 255);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 50px;
+      box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Logo Kelompok 2" />
+    <h1>KELOMPOK 2</h1>
+  </header>
+
+  <main>
+    <div class="description">
+    <p>
+    Selamat datang di halaman Tugas Kelompok 2!  
+    <br><br>
+    Proyek ini dibuat sebagai bagian dari mata kuliah <strong>Pemrograman Berbasis Website</strong>, dengan tujuan untuk memperdalam pemahaman mahasiswa tentang pembuatan dan pengelolaan situs web menggunakan HTML dan fitur CMS (Content Management System).  
+    <br><br>
+    Melalui tugas ini, kami berharap dapat mengasah keterampilan teknis serta memperluas pengalaman dalam membangun website yang dinamis, menarik, dan fungsional.  
+    <br><br>
+    Terima kasih telah mengunjungi halaman kami.
+    </p>
+    </div>
+
+    <h2>Anggota Kelompok</h2>
+    <div class="scroll-container">
+
+<a href="https://kel2web.github.io/Dewi_2024240022/" target="_blank">
+  <div class="card">
+    <img src="foto1.jpg" alt="Dewi">
+    <h3>Dewi Anggreayani</h3>
+    <p>2024240022</p>
+  </div>
+</a>
+
+<a href="https://kel2web.github.io/Faiza_2024240016./" target="_blank">
+  <div class="card">
+    <img src="foto4.jpg" alt="Faiza">
+    <h3>Faiza Fitri Farikhatusshifa</h3>
+    <p>2024240016</p>
+  </div>
+</a>
+
+<a href="https://zahran2024240018.vercel.app/" target="_blank">
+  <div class="card">
+    <img src="foto2.jpg" alt="Zahran">
+    <h3>Zahran</h3>
+    <p>2024240018</p>
+  </div>
+</a>
+
+<a href="https://eka-2024240031.vercel.app/" target="_blank">
+  <div class="card">
+    <img src="foto3.jpg" alt="Eka">
+    <h3>Eka</h3>
+    <p>2024240031</p>
+  </div>
+</a>
+
+<a href="https://sites.google.com/view/wibi0009" target="_blank">
+  <div class="card">
+    <img src="foto5.jpg" alt="Wibi">
+    <h3>Wibi</h3>
+    <p>2024240009</p>
+  </div>
+</a>
+
+    </div>
+  </main>
+
+  <footer>
+    Matakuliah Pemrograman Berbasis Website - 2025
+  </footer>
+
+</body>
+</html>
